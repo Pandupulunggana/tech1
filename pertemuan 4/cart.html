@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="navbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Game shop</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="ecomer1.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Product</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Category
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="game-icon">
+                  <a href="cart.html"><img src="shopping-cart.png" style="width: 20px;"></a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="table-cart">
+      <h1 style="text-align: center;">Your Cart</h1>
+          <table class="table">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Product</th>
+                <th scope="col">Name</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td><img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Devil_May_Cry_5.jpg" style="width: 100px">;</td>
+                <td>DmC 5</td>
+                <td>1</td>
+                <td>19.99$</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td><img src="data:image/jpeg;base64,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" style="width: 100px;"></td>
+                <td>Re 4 Remake</td>
+                <td>1</td>
+                <td>39.99$</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Street_Fighter_6_box_art.jpg/220px-Street_Fighter_6_box_art.jpg" style="width: 100px;"></td>
+                <td>Street fighter 6</td>
+                <td>1</td>
+                <td>49.99$</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</body>
+</html>
