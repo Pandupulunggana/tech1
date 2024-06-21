@@ -1,0 +1,29 @@
+*, body, html {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color:white;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.judul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
